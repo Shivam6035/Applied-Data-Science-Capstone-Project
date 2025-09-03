@@ -4,22 +4,23 @@ Of course. [cite_start]Here is a detailed summary of the data science project pr
 
 ### **Project Overview**
 
-[cite_start]This presentation, created by Shivam Kumar on September 2, 2025, outlines a data science project aimed at predicting the successful landing of a SpaceX Falcon 9 rocket's first stage[cite: 3, 4, 34]. The project's business context is rooted in launch cost determination; [cite_start]SpaceX advertises Falcon 9 launches for $62 million, significantly lower than competitors' costs of over $165 million, largely due to the reusability of the first stage[cite: 30, 31]. [cite_start]By predicting if the first stage will land successfully, one can better estimate the actual cost of a launch, which is valuable information for companies bidding against SpaceX[cite: 32, 33].
+This presentation, outlines a data science project aimed at predicting the successful landing of a SpaceX Falcon 9 rocket's first stage. The project's business context is rooted in launch cost determination; SpaceX advertises Falcon 9 launches for $62 million, significantly lower than competitors' costs of over $165 million, largely due to the reusability of the first stage. By predicting if the first stage will land successfully, one can better estimate the actual cost of a launch, which is valuable information for companies bidding against SpaceX.
 
 ### **Project Goal and Key Questions**
 
-[cite_start]The primary goal is to build a machine learning pipeline to predict the success of a first-stage landing[cite: 34]. The project seeks to answer the following questions:
-* [cite_start]What are the key factors that determine if a rocket will land successfully? [cite: 36]
-* [cite_start]How do various features interact to influence the success rate? [cite: 37]
-* [cite_start]What operational conditions are necessary to ensure a successful landing program? [cite: 38]
+* The primary goal is to build a machine learning pipeline to predict the success of a first-stage landing. The project seeks to answer the following questions:
+* What are the key factors that determine if a rocket will land successfully? 
+* How do various features interact to influence the success rate? 
+* What operational conditions are necessary to ensure a successful landing program? 
+
 
 ### **Methodology**
 
-[cite_start]The project followed a comprehensive data science methodology, from data collection to predictive modeling[cite: 14].
+The project followed a comprehensive data science methodology, from data collection to predictive modeling.
 
 #### **1. Data Collection**
 The dataset was compiled from two primary sources:
-* [cite_start]**SpaceX API:** Data was programmatically collected using a GET request to the SpaceX API[cite: 46, 56]. [cite_start]The JSON response was then decoded and converted into a pandas DataFrame using the `.json()` and `.json_normalize()` methods, respectively[cite: 57].
+* **SpaceX API:** Data was programmatically collected using a GET request to the SpaceX API[cite: 46, 56]. [cite_start]The JSON response was then decoded and converted into a pandas DataFrame using the `.json()` and `.json_normalize()` methods, respectively[cite: 57].
 * [cite_start]**Web Scraping:** Historical Falcon 9 launch records were scraped from a Wikipedia HTML table using the BeautifulSoup library[cite: 46, 59]. [cite_start]The objective was to parse this table and convert it into a pandas DataFrame for analysis[cite: 60].
 
 #### **2. Data Wrangling and Preprocessing**
